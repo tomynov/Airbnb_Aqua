@@ -1,16 +1,35 @@
 /*------------------------------------------------------
                 PAGE HEADER
 ------------------------------------------------------*/
+.top_aqua{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#title_header{
+    /* text-transform: uppercase; */
+    letter-spacing: 2px;
+    color: rgb(65, 65, 172);
+}
+
 .menu_head{
     list-style: none;
     display: flex;
     flex-direction: row;
 }
 
-
-.head_aqua{
-    background-color: blue;
+.lien{
+    margin: 10px;
+    list-style: none;
+    text-decoration: none;
+    color: black;
 }
+
+
+/* .head_aqua{
+    background-color: blue;
+} */
 
 
 /*------------------------------------------------------
