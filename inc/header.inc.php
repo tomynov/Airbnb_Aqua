@@ -7,13 +7,14 @@
         <meta name="description" content="Le site Aquabnb est le tout premier site de location dédié à l'immensité de nos océans !">
         <script src="https://kit.fontawesome.com/782e7c6869.js" crossorigin="anonymous"></script>
         <title>Aquabnb</title>
-        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="../css/style.css">
         <script src="../js/main.js" async> </script>
     </head>
 
     <header>
         <section class="head_qua">
-            <div class="top_aqua">
+
+            <div class="top_aqua"> <!-- Haut de page-->
                 <h1 id="title_header"> Aquabnb </h1>
                 <ul class="menu_head">
                     <li> <a href="index.php" class="lien"> Accueil </li>
@@ -23,7 +24,7 @@
                 </ul>
             </div>
 
-            <div class="recherche_head">
+            <div class="recherche_head"> <!-- Barre de Recherche-->
                 <div class="block_recherche"> 
                     <label> Lieux </label>
                     <input type="text" placeholder="Votre destination" required>
