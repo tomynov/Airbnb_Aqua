@@ -40,8 +40,8 @@
 
                 <label>Mot de passe</label>
                 <div class="form-password">
-                    <input class="input-password-user" type="password" placeholder="Entrer le mot de passe" name="password_inscription" id="password_inscription" required>
-                    <input class="input-password-user" type="password" placeholder="Confirmer le mot de passe" name="password_inscription_confirm" id="password_inscription_confirm" required>
+                    <input class="input-password-user" type="password" placeholder="Entrer le mot de passe" name="password_inscription" id="password_inscription" minlength="6" required>
+                    <input class="input-password-user" type="password" placeholder="Confirmer le mot de passe" name="password_inscription_confirm" id="password_inscription_confirm" minlength="6" required>
                 </div>
 
                 <div class="pp">
