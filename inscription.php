@@ -13,28 +13,11 @@
                 <label>Nom d'utilisateur</label>
                 <input class="input-user-name" type="text" placeholder="Entrer le nom d'utilisateur" name="username_inscription" id="username_inscription" required>
 
-                <label>Date de naissance / Sexe</label>
 
-                <div class="form-date-birth">
-                    <div class="birth">
-                        <input class="form-birth" type="date" name="date_inscription" id="date_inscription" required>
-                    </div>
-                    <div class="gender">
-                        <input type="radio" id="gender_inscription" name="gender_inscription" value="male_inscription">
-                        <label for="male">M</label><br>
-                        <input type="radio" id="gender_inscription" name="gender_inscription" value="female_inscription">
-                        <label for="female">Mme</label><br>
-                        <input type="radio" id="gender_inscription" name="gender_inscription" value="other_inscription">
-                        <label for="other">Etudiant</label>
-                    </div>
-                </div>
-
-
-                <label>E-mail / Téléphone</label>
+                <label>E-mail</label>
                 
                 <div class="form-mail-phone">
                     <input class="form-mail" type="email" name="mail_inscription" placeholder="Entrez votre e-mail"  id="mail_inscription" required>
-                    <input class="form-control" type="tel" name="phone_inscription" placeholder="XX.XX.XX.XX.XX" id="phone_inscription" pattern="[0-9]{10}" required>
                 </div>
 
 
