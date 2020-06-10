@@ -19,7 +19,7 @@
             </div>
             <div class="block_recherche">
                 <label> Voyageurs </label> 
-                <input type="number" min="1" max="99" placeholder="Nombre de voyageurs" required>
+                <input type="number" id="number" min="1" max="99" placeholder="Nombre de voyageurs" required>
             </div>
             <div class="block_recherche">
                 <a href="">
@@ -29,15 +29,21 @@
         </div>
 
         <h1 id="title_main"> Voyager Différemment avec AquaBnb </h1> 
-
         <div class="block_main">
+            <div class="separ"></div>
             <h3 class="title_block_main" > Les Destinations préférées de nos Utilisateurs <i class="fas fa-heart"></i> </h3>
+            <div class="separ"></div>
         </div>
         <div class="block_main">
+            <div class="separ"></div>
             <h3 class="title_block_main" > En manque d'inspiration ? <i class="fas fa-plane-departure"></i> </h3>
+            <div class="separ"></div>
         </div>
         <div class="block_main">
+            <div class="separ"></div>
             <h3 class="title_block_main" > Contactez_nous <i class="fas fa-heart"></i> </h3>
+            <div class="separ"></div>
+
         </div>
     </main>
 
