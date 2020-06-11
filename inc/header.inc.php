@@ -11,6 +11,10 @@
         <script src="../js/main.js" async> </script>
     </head>
 
+     <?php
+    $pdo = new PDO("mysql:host=localhost;dbname=aquabnb", "root", "", array(PDO::ATTR_ERRMODE=>PDO::ERRMODE_EXCEPTION));
+    ?> 
+
     <header>
         <section class="head_aqua">
 
@@ -18,8 +22,8 @@
                 <h1 id="title_header"> Aquabnb  <i class="fas fa-tint"></i></h1>
                 <ul class="menu_head">
                     <li class="lien_head" > <a href="index.php" class="lien"> Accueil </li>
-                    <li class="lien_head" > <a href="" class="lien"> Réservation </li>
-                    <li class="lien_head" > <a href="" class="lien"> Contact </li>
+                    <li class="lien_head" > <a href="reser.php" class="lien"> Réservation </li>
+                    <li class="lien_head" > <a href="#block_vide" class="lien"> Contact </li>
                     <li class="lien_head" > <a href="login.php" class="lien"> Connexion </a> </li>
                 </ul>
             </div>
