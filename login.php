@@ -23,3 +23,6 @@
         </div>
     </section>
 </body>
+
+<?php include("inc/footer.inc.php"); ?>
+
