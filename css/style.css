@@ -1,5 +1,15 @@
 *{
     margin: 0;
+    /* background-color: blue; */
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+main{
+    position: relative;
+    height: 100%;
 }
 
 /*------------------------------------------------------
@@ -37,8 +47,6 @@
     color: black;
 }
 
-
-
 /*------------------------------------------------------
                 PAGE INDEX
 ------------------------------------------------------*/
@@ -54,7 +62,7 @@
 .block_recherche{
     width: 120px;
     /* margin: 40px; */
-    border: black solid 1px;
+    border: rgb(78, 78, 78) dashed 1px;
     padding: 28px 75px;
     display: flex;
     flex-direction: column;
@@ -75,9 +83,16 @@
     color: rgb(65, 65, 172);
 }
 
-.block_main{
+.sect_block_main{
     display: flex;
     flex-direction: row;
+    align-items: center;
+
+}
+
+.block_main{
+    display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
 }
@@ -92,8 +107,91 @@
     border: black solid 1px;
     /* height: 1px; */
     width: 400px;
+    /* display: flex; */
+    /* flex-direction: column; */
 }
 
+.sect_img_main{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.block_img_main{
+    height: 350px;
+    width: 200px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 10px 20px;
+}
+#image_1{
+    background-image: url(../img/Maison_1.png);
+}
+
+#image_2{
+    background-image: url(../img/Maison_8.png);
+}
+
+#image_3{
+    background-image: url(../img/Maison_2.png);
+}
+
+#image_4{
+    background-image: url(../img/Maison_4.png);
+}
+
+/* #image_5{
+    background-image: url(../img/Maison_4.png);
+}
+#image_6{
+    background-image: url(../img/Maison_4.png);
+} */
+
+
+/*------------------------------------------------------
+                PAGE RESERVATION
+------------------------------------------------------*/
+
+.block_map{
+    height: 500px;
+    margin: 15px;
+}
+
+.sect_reser{
+    display: flex;
+    flex-direction: row;
+}
+
+.sect_reser_img{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.prez_img{
+    display: flex;
+}
+
+.block_img_reser{
+    height: 250px;
+    width: 200px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 20px;
+}
+
+#img_reser_1{
+    background-image: url(../img/Maison_7.png);
+}
+#img_reser_2{
+    background-image: url(../img/Maison_1.png);
+}
+#img_reser_3{
+    background-image: url(../img/Peniche_4.png);
+}
+#img_reser_4{
+    background-image: url(../img/Peniche_1.png);
+}
 
 
 /*------------------------------------------------------
@@ -287,3 +385,26 @@
 /*------------------------------------------------------
                 PAGE FOOTER
 ------------------------------------------------------*/
+
+.sect_foot{
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(230, 214, 214);
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+    bottom: 0;
+    /* position: absolute; */
+    padding-top: 25px;
+    margin-top: 50px;
+}
+
+.block_foot{
+    display: flex;
+    flex-direction: row;
+    margin: auto 40px;
+}
+
+#logo_foot{
+    margin: 10px;
+}
