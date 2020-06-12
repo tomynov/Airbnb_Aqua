@@ -11,6 +11,10 @@
         <script src="../js/main.js" async> </script>
     </head>
 
+    <?php
+    $pdo = new PDO("mysql:host=localhost;dbname=aquabnb", "root", "", array(PDO::ATTR_ERRMODE=>PDO::ERRMODE_EXCEPTION));
+    ?>
+    
     <header>
         <section class="head_qua">
             <div class="top_aqua">
