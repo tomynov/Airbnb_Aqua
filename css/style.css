@@ -372,6 +372,10 @@ main{
     justify-content: center;
 }
 
+.line-form{
+    padding-left: 40%;
+}
+
 .line{
     width: 30%;
     border: 1px solid black;
@@ -431,6 +435,10 @@ main{
 
 .recap-password{
     padding-top : 30px;
+}
+
+.p-avertissement{
+    color: red;
 }
 
 .new-profil{
