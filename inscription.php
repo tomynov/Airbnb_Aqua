@@ -1,5 +1,30 @@
 <?php include("inc/header.inc.php"); ?>
 
+<?php
+
+if (!empty($_POST)) {
+
+
+    $_POST["nom_inscription"] = htmlentities($_POST["nom_inscription"], ENT_QUOTES);
+    $_POST["prenom_inscription"] = htmlentities($_POST["prenom_inscription"], ENT_QUOTES);
+    $_POST["mail_inscription"] = htmlentities($_POST["mail_inscription"], ENT_QUOTES);
+    $_POST["password_inscription"] = htmlentities($_POST["password_inscription"], ENT_QUOTES);
+    $_POST["password_inscription_confirm"] = htmlentities($_POST["password_inscription_confirm"], ENT_QUOTES);
+
+    if ($_POST["password_inscription"] != $_POST["password_inscription_confirm"]) {
+        echo "<h3 style = 'color:red'>Le mot de passe est différent que celui confirmé</h3>";
+    }
+    else {
+        $requeteSQL = "INSERT INTO users (nom, prenom, adresse_mail, password_user, confirm_password)";
+        $requeteSQL .= " VALUE ('$_POST[nom_inscription]', '$_POST[prenom_inscription]', '$_POST[mail_inscription]', '$_POST[password_inscription]', '$_POST[password_inscription_confirm]' )";
+        $result = $pdo->exec($requeteSQL);
+        header("location: login.php");
+    }
+}
+
+?>
+
+
 <body>
     <section class="sec-login">
         <div class="opacity-container">
@@ -7,12 +32,14 @@
         <div id="container-login">
             <!-- zone de connexion -->
 
-            <form class="form-login" action="inscription.php" method="POST">
+            <form class="form-login" action="" method="POST">
 
-                <h1 id="title_connect">Connexion</h1>
+                <h1 id="title_connect">Inscription</h1>
                 
-                <label>Nom d'utilisateur</label>
-                <input class="input-user-name" type="text" placeholder="Entrer le nom d'utilisateur" name="username_inscription" id="username_inscription" required>
+                <label>Nom</label>
+                <input class="input-user-name" type="text" placeholder="Entrer votre nom" name="nom_inscription" id="nom_inscription" required>
+                <label>Prénom</label>
+                <input class="input-user-name" type="text" placeholder="Entrer votre prénom" name="prenom_inscription" id="prenom_inscription" required>
 
 
                 <label>E-mail</label>
@@ -28,10 +55,11 @@
                     <input class="input-password-user" type="password" placeholder="Confirmer le mot de passe" name="password_inscription_confirm" id="password_inscription_confirm" minlength="6" required>
                 </div>
 
-                <div class="pp">
+                <!--Ajout photos à développer-->
+                <!--<div class="pp">
                     <label for="document">Photo de profil</label>
                     <input type="file" name="document" id="document">
-                </div>
+                </div>-->
 
                 <input class="input-submit-user" type="submit" id='submit' value='INSCRIPTION' >
 
