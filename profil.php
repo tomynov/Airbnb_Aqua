@@ -50,3 +50,5 @@ if (!empty($_GET)) {
     </section>
 
 </body>
+
+<?php include("inc/footer.inc.php"); ?>

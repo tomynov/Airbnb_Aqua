@@ -1,15 +1,196 @@
+*{
+    margin: 0;
+    /* background-color: blue; */
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+main{
+    position: relative;
+    height: 100%;
+}
+
 /*------------------------------------------------------
                 PAGE HEADER
 ------------------------------------------------------*/
+
+.head_aqua{
+    /* background-color: blue; */
+    margin: 30px;
+}
+
+.top_aqua{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#title_header{
+    /* text-transform: uppercase; */
+    letter-spacing: 2px;
+    color: rgb(65, 65, 172);
+}
+
 .menu_head{
     list-style: none;
     display: flex;
     flex-direction: row;
+    text-align: right;
 }
 
+.lien{
+    margin: 10px;
+    list-style: none;
+    text-decoration: none;
+    color: black;
+}
 
-.head_qua{
-    background-color: blue;
+/*------------------------------------------------------
+                PAGE INDEX
+------------------------------------------------------*/
+
+        /* Barre de Recherche */
+
+.recherche_head{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.block_recherche{
+    width: 120px;
+    /* margin: 40px; */
+    border: rgb(78, 78, 78) dashed 1px;
+    padding: 28px 75px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#number{
+    width: 155px;
+}
+
+        /* Blocks Main */
+
+#title_main{
+    margin: 30px auto;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bolder;
+    color: rgb(65, 65, 172);
+}
+
+.sect_block_main{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+.block_main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.title_block_main{
+    text-align: center;
+    font-weight: bold;
+    margin: auto 30px;
+}
+
+.separ{
+    border: black solid 1px;
+    /* height: 1px; */
+    width: 400px;
+    /* display: flex; */
+    /* flex-direction: column; */
+}
+
+.sect_img_main{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.block_img_main{
+    height: 350px;
+    width: 200px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 10px 20px;
+}
+#image_1{
+    background-image: url(../img/Maison_1.png);
+}
+
+#image_2{
+    background-image: url(../img/Maison_8.png);
+}
+
+#image_3{
+    background-image: url(../img/Maison_2.png);
+}
+
+#image_4{
+    background-image: url(../img/Maison_4.png);
+}
+
+/* #image_5{
+    background-image: url(../img/Maison_4.png);
+}
+#image_6{
+    background-image: url(../img/Maison_4.png);
+} */
+
+
+/*------------------------------------------------------
+                PAGE RESERVATION
+------------------------------------------------------*/
+
+.block_map{
+    height: 500px;
+    margin: 15px;
+}
+
+.sect_reser{
+    display: flex;
+    flex-direction: row;
+}
+
+.sect_reser_img{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.prez_img{
+    display: flex;
+}
+
+.block_img_reser{
+    height: 250px;
+    width: 200px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 20px;
+}
+
+#img_reser_1{
+    background-image: url(../img/Maison_7.png);
+}
+#img_reser_2{
+    background-image: url(../img/Maison_1.png);
+}
+#img_reser_3{
+    background-image: url(../img/Peniche_4.png);
+}
+#img_reser_4{
+    background-image: url(../img/Peniche_1.png);
 }
 
 
@@ -269,3 +450,26 @@
 /*------------------------------------------------------
                 PAGE FOOTER
 ------------------------------------------------------*/
+
+.sect_foot{
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(230, 214, 214);
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+    bottom: 0;
+    /* position: absolute; */
+    padding-top: 25px;
+    margin-top: 50px;
+}
+
+.block_foot{
+    display: flex;
+    flex-direction: row;
+    margin: auto 40px;
+}
+
+#logo_foot{
+    margin: 10px;
+}
