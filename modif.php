@@ -2,6 +2,40 @@
 
 <?php
 
+if (!empty($_POST)) {
+    // Insertion dans la table experience des nouvelles informations 
+
+    $_POST["nom"] = htmlentities($_POST["nom"], ENT_QUOTES);
+    $_POST["prenom"] = htmlentities($_POST["prenom"], ENT_QUOTES);
+    $_POST["mail"] = htmlentities($_POST["mail"], ENT_QUOTES);
+    $_POST["mdp"] = htmlentities($_POST["mdp"], ENT_QUOTES);
+    $_POST["mdp_confirm"] = htmlentities($_POST["mdp_confirm"], ENT_QUOTES);
+
+    $modif_nom = $_POST["nom"];
+    $modif_prenom = $_POST["prenom"];
+    $modif_mail = $_POST["mail"];
+    $modif_mdp = $_POST["mdp"];
+    $modif_mdp_confirm = $_POST["mdp_confirm"];
+
+    if ($modif_mdp == $modif_mdp_confirm){
+                //Utilisation de tableau pour contenir les informations et les utilisées dans une boucle
+        $P = array('nom', 'prenom', 'adresse_mail', 'password_user', 'confirm_password');
+        $L = array($modif_nom, $modif_prenom, $modif_mail, $modif_mdp, $modif_mdp_confirm);
+
+                //Replacement des informations correspondantes
+        for ($i = 0; $i < sizeof($L); $i++ ){
+            $requete = "UPDATE users SET $P[$i] = '$L[$i]' WHERE id_users = $_GET[id]";
+            $result = $pdo->exec($requete);
+        }
+    }
+    else{
+        echo "Le mot de passe ne correspond pas à sa confirmation";
+    }
+}
+?>
+
+<?php
+
 if (!empty($_GET)) {
 
     $result = $pdo->query("SELECT * FROM users WHERE id_users = $_GET[id]");
@@ -14,7 +48,7 @@ if (!empty($_GET)) {
 
     <section class="sec-modif">
         <div>
-            <p>Cette page vous permet de modifier les informations de votre compte Aquabnb, toutes modifications de nom, adresse mail et image seront visible en public.</p>
+            
         </div>
 
         <div class="show-modif">
@@ -32,6 +66,14 @@ if (!empty($_GET)) {
                 </div>
                 <div class="recap-password">
                     <h3 class="h3-user"> Mot de passe actuel : <?php echo $user->password_user;?></h3>
+                </div>
+                <div class="line-form">
+                    <div class="line">
+                        <!--Séparation-->
+                    </div>
+                </div>
+                <div>
+                    <i class="fas fa-exclamation-triangle"><p class="p-avertissement">Cette page vous permet de modifier les informations de votre compte Aquabnb, toutes modifications de nom, adresse mail et image seront visible en public.</p></i>
                 </div>
             </div>
 
