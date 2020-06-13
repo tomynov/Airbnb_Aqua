@@ -32,24 +32,33 @@
 
         <h1 id="title_main"> Voyager Différemment avec AquaBnb </h1> 
         <div class="block_main">    <!-- Premier Block -->
+
             <section class="sect_block_main">
                 <div class="separ"></div>
                 <h3 class="title_block_main" > Les Destinations préférées de nos Utilisateurs <i class="fas fa-heart"></i> </h3>
                 <div class="separ"></div>
             </section>
             <section class="sect_img_main">
-                <div class ="block_img_main" id="image_1">
-                    <!-- <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat recusandae aliquam ab omnis, aspernatur harum labore eligendi excepturi sequi deserunt totam ducimus, deleniti suscipit earum libero, fugit et necessitatibus placeat! -->
-                    <!-- <img id="image_1"> -->
-                </div>
-                <div class ="block_img_main" id="image_2">
-                    <!-- <img id="image_2"> -->
-                </div>
-                <div class ="block_img_main" id="image_3">
-                    <!-- <img id="image_3"> -->
-                </div>
+                <a href="reser.php">
+                    <div class ="block_img_main" id="image_1" title="Voir la réservation">
+                        <!-- <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat recusandae aliquam ab omnis, aspernatur harum labore eligendi excepturi sequi deserunt totam ducimus, deleniti suscipit earum libero, fugit et necessitatibus placeat! -->
+                        <!-- <img id="image_1"> -->
+                    
+                    </div>
+                </a>
+                <a href="reser.php">
+                    <div class ="block_img_main" id="image_2" title="Voir la réservation">
+                        <!-- <img id="image_2"> -->
+                    </div>
+                </a>
+                <a href="reser.php">
+                    <div class ="block_img_main" id="image_3" title="Voir la réservation">
+                        <!-- <img id="image_3"> -->
+                    </div>
+                </a>
             </section>
         </div>
+        
         <div class="block_main">     <!-- Deuxième Block -->
             <section class="sect_block_main">
                 <div class="separ"></div>
