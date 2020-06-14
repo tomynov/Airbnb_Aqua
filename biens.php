@@ -68,7 +68,7 @@ if (!empty($_POST)) {
         </div>
         <div class="list-announce">
         <?php
-            $result = $pdo->query("SELECT * FROM hebergement WHERE id_users = $_GET[id] ORDER BY id_hebergement DESC");
+            $result = $pdo->query("SELECT * FROM hebergement WHERE id_users = $_GET[id] and deletion_flag = 0 ORDER BY id_hebergement DESC");
             while ($hebergement = $result->fetch(PDO::FETCH_OBJ)) { ?>
 
             <div class="announce-recap">
@@ -80,6 +80,7 @@ if (!empty($_POST)) {
                         <div class="text-announce"> <i class="fas fa-map-marker-alt"></i> <?php echo $hebergement->adresse; ?></div>
                         <div class="text-announce"> <i class="fas fa-male"></i> <?php echo $hebergement->nbr_place;?></div>
                         <div class="text-announce"> <i class="fas fa-euro-sign"></i> <?php echo $hebergement->prix; ?> €/nuit</div>
+                        <a href="delete_biens.php?id=<?php echo $hebergement->id_hebergement; ?>" alt="modification des informations d'hébergement">Supprimer</a>
                     </div>
                 </div>
             </div>
