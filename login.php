@@ -9,7 +9,7 @@
     $nom_util = $_POST["identifiant"];
     $password_util = $_POST["password_login"];
 
-    $requete = $pdo->query("SELECT * FROM users WHERE deletion_flag = 0 ");
+    $requete = $pdo->query("SELECT * FROM users WHERE nom = '$nom_util' and deletion_flag = 0 ");
     $login = $requete->fetch(PDO::FETCH_OBJ);
 
     if ($login->nom == $_POST["identifiant"] and $login->password_user == $_POST["password_login"]){
@@ -47,6 +47,4 @@
         </div>
     </section>
 </body>
-
-<?php include("inc/footer.inc.php"); ?>
 
