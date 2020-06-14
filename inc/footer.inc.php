@@ -5,7 +5,7 @@
             <p> Copyright <i class="far fa-copyright"></i></p>
         </div>
         <div class="block_foot">
-            <a class="lien" href="#block_vide"> Contactez-nous </a> <i class="fas fa-id-badge"> 
+            <a class="lien" href="#block_vide"> Contactez-nous </a> <i class="fas fa-id-badge"> </i>
         </div>
         <div class="block_foot" >
             <i class="fab fa-facebook-f" id="logo_foot"></i>

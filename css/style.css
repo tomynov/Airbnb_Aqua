@@ -87,6 +87,7 @@ main{
     display: flex;
     flex-direction: row;
     align-items: center;
+    margin: 90px auto 20px auto;
 
 }
 
@@ -119,11 +120,19 @@ main{
 
 .block_img_main{
     height: 350px;
-    width: 200px;
+    width: 350px;
     background-repeat: no-repeat;
     background-size: cover;
     margin: 10px 20px;
+    box-shadow: black 6px 6px 6px ;
 }
+
+.block_img_main:hover{
+    opacity: 0.8;
+    border-radius: 60px;
+    transition: 2s;
+}
+
 #image_1{
     background-image: url(../img/Maison_1.png);
 }
@@ -172,13 +181,21 @@ main{
     display: flex;
 }
 
+.prez_img :hover{
+    opacity: 0.8;
+    border-radius: 60px;
+    transition: 2s;
+}
+
 .block_img_reser{
     height: 250px;
-    width: 200px;
+    width: 370px;
     background-repeat: no-repeat;
     background-size: cover;
     margin: 20px;
 }
+
+
 
 #img_reser_1{
     background-image: url(../img/Maison_7.png);
@@ -191,6 +208,81 @@ main{
 }
 #img_reser_4{
     background-image: url(../img/Peniche_1.png);
+}
+
+/*------------------------------------------------------
+                PAGE BIEN
+------------------------------------------------------*/
+.infos_bien{
+    display: flex;
+    flex-direction: row;
+    margin-top: 80px;
+}
+
+.title_bien{
+    text-align: center;
+    text-transform: uppercase;
+    color: rgb(65, 65, 172);
+    margin: 70px auto;
+}
+
+.description_bien{
+    width: 780px;
+    margin-right: 60px;
+}
+
+.block_img_bien{
+    background-image: url(../img/Maison_1.png);
+    height: 250px;
+    /* width: 100%;  */
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* margin: 50px auto 50px auto; */
+    max-width: 100%;
+    /* display: block;
+    margin-left: auto;
+    margin-right: auto; */
+    /* clip: rect(119px, 255px, 229px, 80px); */
+}
+
+.descript_bien{
+    font-weight: bold;
+    color: rgb(65, 65, 172);
+    margin-bottom: 15px;
+    padding-left: 30px;
+    letter-spacing: 2px;
+}
+
+.separ_bien{
+    border: rgb(156, 156, 156) solid 1px;
+    width: 400px;
+    /* padding-left: 30px; */
+    margin: 20px auto 20px 30px;
+}
+
+.texte_bien{
+    padding-left: 60px;
+}
+
+#descript_bien_texte{
+    font-weight: bold;
+}
+
+.sect_equip{
+    display: flex;
+    flex-direction: row;
+}
+
+.achat_bien{
+    width: 300px;
+    height: 400px;
+    margin: 15px;
+    border: black solid 1px;
+}
+
+.block_map_bien{
+    width: 100%;
+    margin-top: 90px;
 }
 
 
@@ -524,6 +616,7 @@ main{
     display: flex;
     flex-direction: row;
     margin: auto 40px;
+    align-items: center;
 }
 
 #logo_foot{

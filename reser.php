@@ -12,17 +12,13 @@
         <section class="sect_reser_img">
             
             <div class="prez_img">               
-                <div class="block_img_reser" id="img_reser_1">
-                </div>
-                <div class="block_img_reser" id="img_reser_2">
-                </div>
+                <a href="bien.php"><div class="block_img_reser" id="img_reser_1" title="Voir le bien"></div></a>
+                <a href="bien.php"><div class="block_img_reser" id="img_reser_2" title="Voir le bien"></div></a>
             </div>
 
             <div class="prez_img">               
-                <div class="block_img_reser" id="img_reser_3">
-                </div>
-                <div class="block_img_reser" id="img_reser_4">
-                </div>
+                <a href="bien.php"><div class="block_img_reser" id="img_reser_3" title="Voir le bien"></div></a>
+                <a href="bien.php"><div class="block_img_reser" id="img_reser_4" title="Voir le bien"></div></a>
             </div>
 
         </section>
