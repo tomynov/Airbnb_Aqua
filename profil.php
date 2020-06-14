@@ -29,7 +29,7 @@ if (!empty($_GET)) {
                 </div>
             </div>
             <div class="modif">
-                <a href="modif.php?id=<?php echo $user->id_users?>" alt="modif profile"><button class="button-modif"> Modifier </button></a>
+                <a href="modif.php?id=<?php echo $user->id_users;?>" alt="modif profile"><button class="button-modif"> Modifier </button></a>
                 <a href="index.php" alt="retour à l'accueil"><button class="button-deco"> Déconnexion </button></a>
             </div>
         </div>
@@ -43,7 +43,7 @@ if (!empty($_GET)) {
 
     <section class="user-location">
         <h2> Mes hébergements </h2>
-        <a href="biens.php" alt="Gestion des herbergements"><button class="bouton-biens"> Gérer mes <br> hébergements </button></a>
+        <a href="biens.php?id=<?php echo $user->id_users; ?>" alt="Gestion des herbergements"><button class="bouton-biens"> Gérer mes <br> hébergements </button></a>
         <div class="info-bloc1">
 
         </div>
