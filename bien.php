@@ -42,15 +42,30 @@
             </div>
         </section>
 
+        <div class="overlay" id="overlayModal">
+        
+        </div>
+
+        <!-- Fenêtre Pop-up -->
+        <div class="modal_login" id="modalLogin">
+            <p>
+                Achat effectué
+            </p>
+            <button id="btn_popUp">Retour</button>
+        </div>
+
         <section class="achat_bien">
-            <div class="adresse">
+            <div id="adresse" class="block_bien_achat">
                 <p>15 allé des Moulins</p>
             </div>
-            <div class="prix_bien">
+            <div id="prix_bien" class="block_bien_achat">
                 <p>78 €/Nuits </p>
             </div>
-            <div class="achat">
-                <button>Payer</button>
+            <div id="Note" class="block_bien_achat">
+                <p>4.7/5 </p>
+            </div>
+            <div class="paye_bien" id="loginBtn">
+                <button class="btn_paye">Payer</button>
             </div>
         </section>
 

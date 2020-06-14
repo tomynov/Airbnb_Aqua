@@ -8,7 +8,7 @@
         <script src="https://kit.fontawesome.com/782e7c6869.js" crossorigin="anonymous"></script>
         <title>Aquabnb</title>
         <link rel="stylesheet" href="css/style.css">
-        <script src="../js/main.js" async> </script>
+        <script src="js/main.js" async> </script>
     </head>
 
      <?php
