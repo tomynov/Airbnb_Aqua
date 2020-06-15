@@ -346,6 +346,15 @@ main{
     box-sizing: border-box;
 }
 
+/* .input-user{
+    width: 20%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: flex;
+    border : 1px solid black;
+    box-sizing: border-box;
+} */
+
 .input-submit-user{
     background-color: black;
     color: white;
@@ -556,7 +565,7 @@ main{
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
-    height: 800px;
+    height: 950px;
 }
 
 .ajout-biens{
@@ -564,8 +573,12 @@ main{
     background-color: white;
     border: 2px solid grey;
     width: 40%;
-    height: 700px;
+    height: 900px;
     margin: 40px;
+}
+
+.equip-form{
+    display: flex;
 }
 
 .h1-biens{
