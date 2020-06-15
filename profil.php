@@ -11,7 +11,7 @@ if (!empty($_GET)) {
 ?>
 
 <body>
-
+    <main>
     <div class="h1-form-user">
         <h1>Bienvenue sur votre page de profil <?php echo $user->nom; echo " "; echo $user->prenom;?></h1>
     </div>
@@ -69,7 +69,7 @@ if (!empty($_GET)) {
 
 
         <?php } ?>
-
+    </main>
 </body>
 
 <?php include("inc/footer.inc.php"); ?>

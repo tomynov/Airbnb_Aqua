@@ -721,7 +721,7 @@ main{
 }
 
 .one-announce{
-    width: 30%;
+    /* width: 30%; */
     border: 1px solid black;
     margin-right: 20px;
 }
@@ -762,19 +762,71 @@ main{
     margin: 10px;
 }
 
+/*------------------------------------------------------
+                RESPONSIVE DESIGN
+------------------------------------------------------*/
+
 @media (max-width: 375px)  
 { 
     main
     {
         width: 1300px;
     }
+    footer{
+        width: 1300px;
+    }
+
+    /* -------- Page INDEX -------- */
+
     #title_main 
     {
         text-align: center;
         width: 100%;
     }
-    footer{
+
+    /* -------- Page RESERVATION -------- */
+
+    .sect_reser {
+        display: flex;
+        flex-direction: column;
+    }
+    .block_map{
+        /* width: 100%; */
         width: 1300px;
+
+    }
+
+    /* -------- Page BIEN -------- */
+
+    /* -------- Page LOGIN -------- */
+
+    .sect-login{
+        width: 1300px;
+    }
+
+    #container-login{
+        margin-top: 110px;
+    }
+
+
+    /* -------- Page INSCRIPTION -------- */
+
+    /* -------- Page PROFIL -------- */
+
+    .info-user{
+        margin: 0;
+    }
+
+    /* -------- PAGE MODIFICATION INFOS PERSO -------- */
+
+    /* -------- Page BIENS -------- */
+
+    .one-announce {
+        width: 100%;
+    }
+    #title-biens{
+        margin: 30px;
+        color: rgb(65, 65, 172);
     }
 
 }

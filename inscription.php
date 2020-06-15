@@ -26,6 +26,7 @@ if (!empty($_POST)) {
 
 
 <body>
+    <main>
     <section class="sec-login">
         <div class="opacity-container">
         </div>
@@ -67,4 +68,5 @@ if (!empty($_POST)) {
                 
         </div>
     </section>
+    </main>
 </body>

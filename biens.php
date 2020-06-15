@@ -25,7 +25,7 @@ if (!empty($_POST)) {
 ?>
 
 <body>
-
+    <main>
     <section class="font-biens">
         <div class="ajout-biens">
             <h1 class="h1-biens">Créer vos hébergements ici et commencez votre activité au sein de notre site</h1>
@@ -64,7 +64,7 @@ if (!empty($_POST)) {
 
     <section class="user-announce">
         <div>
-            <h2> Vos annonces d'hébergement </h2>
+            <h2 id="title-biens"> Vos annonces d'hébergement </h2>
         </div>
         <div class="list-announce">
         <?php
@@ -89,5 +89,5 @@ if (!empty($_POST)) {
         <?php } ?>
         </div>
     </section>
-
+    </main>
 </body>

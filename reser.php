@@ -23,9 +23,9 @@
         // $resa++;
         ?>
 
-        <section class="sect_reser_img">
+        <section class="sect_reser_img"> <!-- Section pour les images -->
         
-            <div class="prez_img"  title="Voir le bien">               
+            <div class="prez_img"  title="Voir le bien"> <!-- Première ligne -->              
                     <img class="block_img_reser" src="img/Maison_7.png" alt="image du logement ">
                         <a href="bien.php?id=<?php echo $hebergement->id_hebergement; ?>">
                             <button class="btn_log" id="btn_log_pos"> Voir le logement  </button>
@@ -38,7 +38,7 @@
                         </div>
             </div>
 
-            <div class="prez_img"  title="Voir le bien">               
+            <div class="prez_img"  title="Voir le bien"> <!-- Deuxième ligne -->               
                     <img class="block_img_reser" src="img/Peniche_4.png" alt="image du logement ">
                     <a href="bien.php?id=<?php echo $hebergement->id_hebergement; ?>">
                         <button class="btn_log" id="btn_log_pos"> Voir le logement  </button>
