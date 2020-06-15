@@ -8,15 +8,15 @@
         <script src="https://kit.fontawesome.com/782e7c6869.js" crossorigin="anonymous"></script>
         <title>Aquabnb</title>
         <link rel="stylesheet" href="css/style.css">
-        <script src="../js/main.js" async> </script>
+        <script src="js/main.js" async> </script>
     </head>
 
      <?php
     $pdo = new PDO("mysql:host=localhost;dbname=aquabnb", "root", "", array(PDO::ATTR_ERRMODE=>PDO::ERRMODE_EXCEPTION));
     ?> 
 
-    <header>
-        <section class="head_aqua">
+    <header class="head_aqua">
+        <section class="sect_head_aqua">
 
             <div class="top_aqua"> <!-- Haut de page-->
                 <h1 id="title_header"> Aquabnb  <i class="fas fa-tint"></i></h1>

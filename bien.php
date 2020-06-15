@@ -1,20 +1,27 @@
 <?php include("inc/header.inc.php"); ?>
 
+<?php
+
+    $result = $pdo->query("SELECT * FROM hebergement WHERE id_users = $_GET[id] ORDER BY id_hebergement DESC");
+    while ($hebergement = $result->fetch(PDO::FETCH_OBJ)) { 
+
+?>
+
 <body>
     <main>
 
-    <h2 class="title_bien"> Maison en bois sur l'eau</h2>
+    <h2 class="title_bien"><?php echo $hebergement->title; ?><!-- Maison en bois sur l'eau --></h2>
     <div class="block_img_bien"></div>
     <section class="infos_bien">
         <section class="description_bien">
             <div class="detail_maison">
                 <h4 class="descript_bien"> Couchage </h4>
-                <p class="texte_bien" id="descript_bien_texte"> 6 voyageurs, 3 chambres, 2 lits double et 2 lits simple </p>
+                <p class="texte_bien" id="descript_bien_texte"> <?php echo $hebergement->couchage; ?> <!--6 voyageurs, 3 chambres, 2 lits double et 2 lits simple --></p>
             </div>
             <div class="separ_bien"></div>
             <div class="texte_maison">
                 <h4 class="descript_bien"> Description</h4>
-                <p class="texte_bien"> Magnifique maison spacieuse sur l'eau. Rénover en 2018, cette maison est parfaite pour vour ressourcez et à 15min en voiture de la ville 
+                <p class="texte_bien"> <?php echo $hebergement->desc_hebergement; ?> <!--Magnifique maison spacieuse sur l'eau. Rénover en 2018, cette maison est parfaite pour vour ressourcez et à 15min en voiture de la ville -->
             </div>
             <div class="separ_bien"></div>
             <div class="avis">
@@ -26,32 +33,50 @@
                 <h4 class="descript_bien"> Equipements</h4>
                 <section class="sect_equip">
                     <div class="block_equip">
-                        <p class="texte_bien">Wi-Fi</p>
-                        <p class="texte_bien">Télévision</p>
-                        <p class="texte_bien">Chauffage</p>
-                        <p class="texte_bien">Lave-vaiselle</p>
+                        <p class="texte_bien"><?php echo $hebergement->equipement; ?><!--Wi-Fi--></p>
+                        <p class="texte_bien"><?php echo $hebergement->equipement_1; ?><!--Télévision--></p>
+                        <p class="texte_bien"><?php echo $hebergement->equipement_2; ?><!--Chauffage--></p>
+                        <p class="texte_bien"><?php echo $hebergement->equipement_3; ?><!--Lave-vaiselle--></p>
                     </div>
                     <div class="block_equip">
-                        <p class="texte_bien">Ustensiles de cuisine</p>
-                        <p class="texte_bien">Réfrigérateur</p>
-                        <p class="texte_bien">Micro-ondes</p>
-                        <p class="texte_bien">Draps</p>
+                        <p class="texte_bien"><?php echo $hebergement->equipement_4; ?><!--Ustensiles de cuisine--></p>
+                        <p class="texte_bien"><?php echo $hebergement->equipement_5; ?><!--Réfrigérateur--></p>
+                        <p class="texte_bien"><?php echo $hebergement->equipement_6; ?><!--Micro-ondes--></p>
+                        <p class="texte_bien"><?php echo $hebergement->equipement_7; ?><!--Draps--></p>
                     </div>
                 </section>
 
             </div>
         </section>
 
+        <div class="overlay" id="overlayModal">
+        
+        </div>
+
+        <!-- Fenêtre Pop-up -->
+        <div class="modal_login" id="modalLogin">
+            <p>
+                Achat effectué
+            </p>
+            <button id="btn_popUp">Retour</button>
+        </div>
+
         <section class="achat_bien">
-            <div class="adresse">
-                <p>15 allé des Moulins</p>
+            <div id="adresse" class="block_bien_achat">
+                <p> <?php echo $hebergement->adresse; ?> <!--15 allé des Moulins--></p>
             </div>
-            <div class="prix_bien">
-                <p>78 €/Nuits </p>
+            <div id="prix_bien" class="block_bien_achat">
+                <p> <?php echo $hebergement->prix; ?> <!--78 €/Nuits --></p>
             </div>
-            <div class="achat">
-                <button>Payer</button>
+            <div id="Note" class="block_bien_achat">
+                <p>4.7/5 </p>
             </div>
+            <div class="paye_bien" id="loginBtn">
+                <button class="btn_paye">Payer</button>
+            </div>
+
+        <?php } ?>
+        
         </section>
 
     </section>
@@ -62,4 +87,6 @@
     </main>
 </body>
 
+
+                
 <?php include("inc/footer.inc.php"); ?>
