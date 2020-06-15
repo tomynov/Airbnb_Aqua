@@ -69,6 +69,10 @@
                 <div class ="block_img_main" id="image_4">
                     <!-- <img id="image_4"> -->
                 </div>
+                <div class ="block_img_main" id="image_5">
+                </div>
+                <div class ="block_img_main" id="image_6">
+                </div>
             </section>
         </div>
 

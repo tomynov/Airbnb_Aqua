@@ -1,5 +1,14 @@
 <?php include("inc/header.inc.php"); ?>
 
+<?php
+
+    $result = $pdo->query("SELECT * FROM hebergement WHERE deletion_flag = 0 ORDER BY id_hebergement DESC");
+    $resa = 0;
+    while ($hebergement = $result->fetch(PDO::FETCH_OBJ) and $resa <5)  { 
+    $resa++;
+
+?>
+
 <body>
 
     <main>
@@ -22,6 +31,7 @@
             </div>
 
         </section>
+        <?php } ?>
     </section>
 
     </main>
