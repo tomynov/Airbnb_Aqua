@@ -23,7 +23,7 @@
                 <ul class="menu_head">
                     <li class="lien_head" > <a href="index.php" class="lien"> Accueil </li>
                     <li class="lien_head" > <a href="reser.php" class="lien"> Réservation </li>
-                    <li class="lien_head" > <a href="#block_vide" class="lien"> Contact </li>
+                    <!-- <li class="lien_head" > <a href="#block_vide" class="lien"> Contact </li> -->
                     <li class="lien_head" > <a href="login.php" class="lien"> Connexion </a> </li>
                 </ul>
             </div>
