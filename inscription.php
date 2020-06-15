@@ -10,13 +10,14 @@ if (!empty($_POST)) {
     $_POST["mail_inscription"] = htmlentities($_POST["mail_inscription"], ENT_QUOTES);
     $_POST["password_inscription"] = htmlentities($_POST["password_inscription"], ENT_QUOTES);
     $_POST["password_inscription_confirm"] = htmlentities($_POST["password_inscription_confirm"], ENT_QUOTES);
+    $_POST["image"] = htmlentities($_POST["image"], ENT_QUOTES);
 
     if ($_POST["password_inscription"] != $_POST["password_inscription_confirm"]) {
         echo "<h3 style = 'color:red'>Le mot de passe est différent que celui confirmé</h3>";
     }
     else {
-        $requeteSQL = "INSERT INTO users (nom, prenom, adresse_mail, password_user, confirm_password)";
-        $requeteSQL .= " VALUE ('$_POST[nom_inscription]', '$_POST[prenom_inscription]', '$_POST[mail_inscription]', '$_POST[password_inscription]', '$_POST[password_inscription_confirm]' )";
+        $requeteSQL = "INSERT INTO users (nom, prenom, adresse_mail, password_user, confirm_password, img_user)";
+        $requeteSQL .= " VALUE ('$_POST[nom_inscription]', '$_POST[prenom_inscription]', '$_POST[mail_inscription]', '$_POST[password_inscription]', '$_POST[password_inscription_confirm]', '$_POST[image]')";
         $result = $pdo->exec($requeteSQL);
         header("location: login.php");
     }
@@ -36,16 +37,17 @@ if (!empty($_POST)) {
 
                 <h1 id="title_connect">Inscription</h1>
                 
-                <label>Nom</label>
-                <input class="input-user-name" type="text" placeholder="Entrer votre nom" name="nom_inscription" id="nom_inscription" required>
-                <label>Prénom</label>
-                <input class="input-user-name" type="text" placeholder="Entrer votre prénom" name="prenom_inscription" id="prenom_inscription" required>
+                <label>Nom / Prénom</label>
+                <div class="form-password">
+                    <input class="input-user-name" type="text" placeholder="Entrer votre nom" name="nom_inscription" id="nom_inscription" required>
+                    <input class="input-user-name" type="text" placeholder="Entrer votre prénom" name="prenom_inscription" id="prenom_inscription" required>
+                </div>
 
 
                 <label>E-mail</label>
                 
                 <div class="form-mail-phone">
-                    <input class="form-mail" type="email" name="mail_inscription" placeholder="Entrez votre e-mail"  id="mail_inscription" required>
+                    <input class="input-user-name" type="email" name="mail_inscription" placeholder="Entrez votre e-mail"  id="mail_inscription" required>
                 </div>
 
 
@@ -54,12 +56,6 @@ if (!empty($_POST)) {
                     <input class="input-password-user" type="password" placeholder="Entrer le mot de passe" name="password_inscription" id="password_inscription" minlength="6" required>
                     <input class="input-password-user" type="password" placeholder="Confirmer le mot de passe" name="password_inscription_confirm" id="password_inscription_confirm" minlength="6" required>
                 </div>
-
-                <!--Ajout photos à développer-->
-                <!--<div class="pp">
-                    <label for="document">Photo de profil</label>
-                    <input type="file" name="document" id="document">
-                </div>-->
 
                 <input class="input-submit-user" type="submit" id='submit' value='INSCRIPTION' >
 
