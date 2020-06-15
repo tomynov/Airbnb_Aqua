@@ -224,15 +224,20 @@ main{
     right: 500px;
 }
 
-.prez_img :hover{
+.prez_img :hover {
     opacity: 0.6;
     border-radius: 60px;
     transition: 2s;
     z-index: 1;
 }
 
-#btn_log :hover{
-    opacity: 10;
+.prez_img :hover .btn_log{
+    opacity: 1;
+    z-index :4;
+}
+
+.btn_log :hover{
+    opacity: 1;
     z-index :4;
 }
 
@@ -755,4 +760,21 @@ main{
 
 #logo_foot{
     margin: 10px;
+}
+
+@media (max-width: 375px)  
+{ 
+    main
+    {
+        width: 1300px;
+    }
+    #title_main 
+    {
+        text-align: center;
+        width: 100%;
+    }
+    footer{
+        width: 1300px;
+    }
+
 }
