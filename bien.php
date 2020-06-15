@@ -2,8 +2,8 @@
 
 <?php
 
-    $result = $pdo->query("SELECT * FROM hebergement WHERE id_users = $_GET[id] ORDER BY id_hebergement DESC");
-    while ($hebergement = $result->fetch(PDO::FETCH_OBJ)) { 
+    $result = $pdo->query("SELECT * FROM hebergement WHERE id_hebergement = $_GET[id] ORDER BY id_hebergement DESC");
+    $hebergement = $result->fetch(PDO::FETCH_OBJ) 
 
 ?>
 
@@ -75,7 +75,7 @@
                 <button class="btn_paye">Payer</button>
             </div>
 
-        <?php } ?>
+        <?php //} ?>
         
         </section>
 

@@ -25,6 +25,7 @@
 
 
 <body class="body-login">
+    <main>
     <section class="sec-login">
         <div class="opacity-container">
         </div>
@@ -46,5 +47,6 @@
             </form>
         </div>
     </section>
+    </main>
 </body>
 

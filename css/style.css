@@ -181,19 +181,51 @@ main{
 }
 
 .sect_reser_img{
-    display: flex;
+    display: block;
     flex-wrap: wrap;
     justify-content: center;
 }
 
 .prez_img{
+    z-index: 2;
     display: flex;
 }
 
-.prez_img :hover{
-    opacity: 0.8;
+.btn_log{
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-align: center;
+    background-color: rgb(65, 65, 172);
+    color: white;
+    padding: 8px 22px;
+    display: block;
+    margin : auto;
+    margin-top: 110px;
+    position: absolute;
+    z-index :4;
+    right: 100px;
+    opacity: 0;
+}
+
+#btn_log_pos{
+    right: 500px;
+}
+
+.prez_img :hover {
+    opacity: 0.6;
     border-radius: 60px;
     transition: 2s;
+    z-index: 1;
+}
+
+.prez_img :hover .btn_log{
+    opacity: 1;
+    z-index :4;
+}
+
+.btn_log :hover{
+    opacity: 1;
+    z-index :4;
 }
 
 .block_img_reser{
@@ -202,6 +234,8 @@ main{
     background-repeat: no-repeat;
     background-size: cover;
     margin: 20px;
+    display: block;
+    backface-visibility: hidden;
 }
 
 
@@ -689,7 +723,7 @@ main{
 }
 
 .one-announce{
-    width: 30%;
+    /* width: 30%; */
     border: 1px solid black;
     margin-right: 20px;
 }
@@ -728,4 +762,73 @@ main{
 
 #logo_foot{
     margin: 10px;
+}
+
+/*------------------------------------------------------
+                RESPONSIVE DESIGN
+------------------------------------------------------*/
+
+@media (max-width: 375px)  
+{ 
+    main
+    {
+        width: 1300px;
+    }
+    footer{
+        width: 1300px;
+    }
+
+    /* -------- Page INDEX -------- */
+
+    #title_main 
+    {
+        text-align: center;
+        width: 100%;
+    }
+
+    /* -------- Page RESERVATION -------- */
+
+    .sect_reser {
+        display: flex;
+        flex-direction: column;
+    }
+    .block_map{
+        /* width: 100%; */
+        width: 1300px;
+
+    }
+
+    /* -------- Page BIEN -------- */
+
+    /* -------- Page LOGIN -------- */
+
+    .sect-login{
+        width: 1300px;
+    }
+
+    #container-login{
+        margin-top: 110px;
+    }
+
+
+    /* -------- Page INSCRIPTION -------- */
+
+    /* -------- Page PROFIL -------- */
+
+    .info-user{
+        margin: 0;
+    }
+
+    /* -------- PAGE MODIFICATION INFOS PERSO -------- */
+
+    /* -------- Page BIENS -------- */
+
+    .one-announce {
+        width: 100%;
+    }
+    #title-biens{
+        margin: 30px;
+        color: rgb(65, 65, 172);
+    }
+
 }

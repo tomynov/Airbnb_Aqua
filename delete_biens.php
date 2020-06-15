@@ -13,9 +13,9 @@
             <p>Votre hébergement à bien été supprimé et n'est plus visible par les visiteurs d'aquabnb.</p>
             <?php
                 $result = $pdo->query("SELECT * FROM hebergement WHERE id_hebergement = $_GET[id] ORDER BY id_hebergement DESC");
-                $retour = $pdo->exec($result);
+                $retour = $result->fetch(PDO::FETCH_OBJ);
             ?>
-            <a href="biens.php?id=<?php echo $retour->id_user ?>" alt="retour à ses hebergements"><button> Retour à vos biens </button></a>
+            <a href="biens.php?id=<?php echo $retour->id_users; ?>" alt="retour à ses hebergements"><button> Retour à vos biens </button></a>
         </div>
     </main>
 
