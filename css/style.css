@@ -204,7 +204,7 @@ main{
     display: flex;
 }
 
-#btn_log{
+.btn_log{
     letter-spacing: 2px;
     text-transform: uppercase;
     text-align: center;
@@ -214,18 +214,25 @@ main{
     display: block;
     margin : auto;
     margin-top: 110px;
+    position: absolute;
+    z-index :4;
+    right: 100px;
     opacity: 0;
 }
 
+#btn_log_pos{
+    right: 500px;
+}
+
 .prez_img :hover{
-    opacity: 0.8;
+    opacity: 0.6;
     border-radius: 60px;
     transition: 2s;
     z-index: 1;
 }
 
 #btn_log :hover{
-    opacity: 1;
+    opacity: 10;
     z-index :4;
 }
 
@@ -235,7 +242,11 @@ main{
     background-repeat: no-repeat;
     background-size: cover;
     margin: 20px;
+    display: block;
+    backface-visibility: hidden;
 }
+
+
 
 #img_reser_1{
     background-image: url(../img/Maison_7.png);

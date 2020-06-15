@@ -19,31 +19,40 @@
 
         <?php
 
-        while ($hebergement = $result->fetch(PDO::FETCH_OBJ) and $resa <5)  { 
-        $resa++;
+        // while ($hebergement = $result->fetch(PDO::FETCH_OBJ) and $resa <5)  { 
+        // $resa++;
         ?>
 
         <section class="sect_reser_img">
         
-            <div class="prez_img">               
-                <div class="block_img_reser" id="img_reser_1" title="Voir le bien">
-                    <a href="bien.php?id=<?php echo $hebergement->id_hebergement; ?>">
-                        <button id="btn_log"> Voir le logement  </button>
+            <div class="prez_img"  title="Voir le bien">               
+                    <img class="block_img_reser" src="img/Maison_7.png" alt="image du logement ">
+                        <a href="bien.php?id=<?php echo $hebergement->id_hebergement; ?>">
+                            <button class="btn_log" id="btn_log_pos"> Voir le logement  </button>
                         </a>
-                </div>
-                <div class="block_img_reser" id="img_reser_2" title="Voir le bien">
-                    <a href="bien.php?id=<?php echo $hebergement->id_hebergement; ?>">
-                        <button id="btn_log"> Voir le logement  </button>
-                    </a>
-                </div>
+                    <img class="block_img_reser" src="img/Maison_1.png" alt="image du logement ">
+                        <div class="middle">
+                            <a href="bien.php?id=<?php echo $hebergement->id_hebergement; ?>">
+                                <button class="btn_log" > Voir le logement  </button>
+                            </a>
+                        </div>
             </div>
 
-            <div class="prez_img">               
-                <a href="bien.php?id=<?php echo $hebergement->id_hebergement; ?>"><div class="block_img_reser" id="img_reser_3" title="Voir le bien"></div></a>
-                <a href="bien.php?id=<?php echo $hebergement->id_hebergement; ?>"><div class="block_img_reser" id="img_reser_4" title="Voir le bien"></div></a>
+            <div class="prez_img"  title="Voir le bien">               
+                    <img class="block_img_reser" src="img/Peniche_4.png" alt="image du logement ">
+                    <a href="bien.php?id=<?php echo $hebergement->id_hebergement; ?>">
+                        <button class="btn_log" id="btn_log_pos"> Voir le logement  </button>
+                    </a>
+                    <img class="block_img_reser" src="img/Peniche_1.png" alt="image du logement ">
+                    <a href="bien.php?id=<?php echo $hebergement->id_hebergement; ?>">
+                        <button class="btn_log" > Voir le logement  </button>
+                    </a>
             </div>
+
+   
+
         </section>
-        <?php } ?>
+        <?php //} ?>
     </section>
 
     </main>
