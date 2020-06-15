@@ -84,6 +84,12 @@
                 <h3 class="title_block_main" > Contactez_nous <i class="fas fa-id-badge"></i> </h3>
                 <div class="separ"></div>
             </section>
+            <section class ="sect_contact">
+                <div class="form_contact">
+                    <textarea id="text_cont" name="text_cont" rows="10" cols="66"></textarea>
+                    <button id="button_contact" type="submit"> Envoyer </button>
+                </div>
+            <section>
         </div>
 
     </main>
