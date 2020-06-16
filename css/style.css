@@ -737,6 +737,21 @@ main{
 
 
 /*------------------------------------------------------
+                PAGE MODIF_BIENS
+------------------------------------------------------*/
+
+.button-back-biens{
+    width: 100%;
+    text-align: center;
+}
+
+.button-back{
+    padding: 10px 20px 10px 20px;
+    background-color: grey;
+    color: blue;
+}
+
+/*------------------------------------------------------
                 PAGE FOOTER
 ------------------------------------------------------*/
 
@@ -831,4 +846,24 @@ main{
         color: rgb(65, 65, 172);
     }
 
+}
+
+@media (max-width: 1200px)  {
+    .show-modif{
+        display: block;
+    }
+
+    .bloc-info{
+        display: block;
+    }
+
+    .recap-profil{
+        height: 600px;
+    }
+
+    .sec-modif{
+        justify-content: right;
+        text-align: center;
+        width: 100%;
+    }
 }
