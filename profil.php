@@ -64,7 +64,6 @@ if (!empty($_GET)) {
                             <div class="text-announce"> <i class="fas fa-map-marker-alt"></i> <?php echo $hebergement->adresse; ?></div>
                             <div class="text-announce"> <i class="fas fa-male"></i> <?php echo $hebergement->nbr_place;?></div>
                             <div class="text-announce"> <i class="fas fa-euro-sign"></i> <?php echo $hebergement->prix; ?> €/nuit</div>
-                            <a href="delete_biens.php?id=<?php echo $hebergement->id_hebergement; ?>" alt="modification des informations d'hébergement">Supprimer</a>
                         </div>
                     </div>
                 </div>
