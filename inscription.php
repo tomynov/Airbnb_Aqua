@@ -16,8 +16,8 @@ if (!empty($_POST)) {
         echo "<h3 style = 'color:red'>Le mot de passe est différent que celui confirmé</h3>";
     }
     else {
-        $requeteSQL = "INSERT INTO users (nom, prenom, adresse_mail, password_user, confirm_password, img_user)";
-        $requeteSQL .= " VALUE ('$_POST[nom_inscription]', '$_POST[prenom_inscription]', '$_POST[mail_inscription]', '$_POST[password_inscription]', '$_POST[password_inscription_confirm]', '$_POST[image]')";
+        $requeteSQL = "INSERT INTO users (nom, prenom, adresse_mail, password_user, confirm_password)";
+        $requeteSQL .= " VALUE ('$_POST[nom_inscription]', '$_POST[prenom_inscription]', '$_POST[mail_inscription]', '$_POST[password_inscription]', '$_POST[password_inscription_confirm]')";
         $result = $pdo->exec($requeteSQL);
         header("location: login.php");
     }
