@@ -218,7 +218,7 @@ main{
 }
 
 #btn_log_pos{
-    right: 500px;
+    right: 430px;
 }
 
 .prez_img :hover {
@@ -733,7 +733,8 @@ main{
 }
 
 .one-announce{
-    /* width: 30%; */
+     /* width: 30%;  */
+     padding: 30px;
     border: 1px solid black;
     margin-right: 20px;
 }
